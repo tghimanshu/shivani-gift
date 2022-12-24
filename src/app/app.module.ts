@@ -5,18 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StartPageComponent } from './start-page/start-page.component';
 import { HomeComponent } from './chats/home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Angular Material
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatIconModule } from '@angular/material/icon';
+import { AllChatsComponent } from './chats/all-chats/all-chats.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    StartPageComponent,
-    HomeComponent
-  ],
+  declarations: [AppComponent, StartPageComponent, HomeComponent, AllChatsComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+
+    // angular material
+    MatTabsModule,
+    MatIconModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
