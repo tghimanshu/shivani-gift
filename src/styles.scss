@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Klee+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Marck Script", cursive;
+  color: white;
+}
+
+html,
+body {
+  font-size: 16px;
+}
+
+.heading {
+  font-family: "Rock Salt", cursive;
+}
+
+.ff-jp {
+  font-family: "Klee One", cursive;
+}

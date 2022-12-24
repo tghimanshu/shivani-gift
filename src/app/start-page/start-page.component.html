@@ -1,0 +1,22 @@
+<div class="start-page">
+  <h1 class="heading">Hello Temari</h1>
+
+  <h3 class="ff-jp" (dblclick)="changeFirstText()">
+    <span class="jp-text" *ngIf="!firstText">
+      あなたが私のためにしてくれたすべてに感謝します。というわけで、ささやかなプレゼントです。
+    </span>
+    <span class="eng-text" *ngIf="firstText">
+      Thank you for everything you've done for me. So, here's a small gift.
+    </span>
+  </h3>
+  <h3 class="ff-jp" (dblclick)="changeSecondText()">
+    <span class="jp-text" *ngIf="!secondText">
+      サイトを開始する前に、これをホームページに追加します
+    </span>
+    <span class="eng-text" *ngIf="secondText">
+      Add this to your home page before you start your site
+    </span>
+  </h3>
+
+  <button class="start-btn"><div>Start Now!</div></button>
+</div>
