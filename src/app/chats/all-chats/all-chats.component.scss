@@ -1,3 +1,6 @@
+.all-chats {
+  overflow: hidden;
+}
 .chat {
   padding: 15px;
   display: flex;
@@ -10,6 +13,9 @@
   height: 60px;
   object-fit: cover;
   border-radius: 50%;
+}
+.chat-content {
+  overflow: hidden;
 }
 
 .msg {
