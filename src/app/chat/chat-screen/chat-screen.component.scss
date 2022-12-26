@@ -54,4 +54,30 @@
 
 .text-input {
   padding: 15px;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto auto;
+  gap: 5px;
+}
+
+.input-container {
+  display: flex;
+  // grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 15px;
+}
+
+.text-message {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.send-button {
+  border-radius: 50%;
+  background-color: orange;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
 }
