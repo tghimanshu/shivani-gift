@@ -22,7 +22,14 @@ import { ChatsService } from 'src/app/service/chats.service';
   styleUrls: ['./all-chats.component.scss'],
 })
 export class AllChatsComponent {
-  chats: object[] = [];
+  chats!: {
+    id: number;
+    profilePic: string;
+    name: string;
+    msg: string;
+    msgs: string[];
+    answer: string;
+  }[];
   // chats = [
   //   {
   //     id: 1,

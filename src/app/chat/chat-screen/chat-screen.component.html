@@ -1,15 +1,11 @@
-<div class="chat-screen">
+<div class="chat-screen" *ngIf="chat">
   <div class="header">
     <div class="chat-pic" [routerLink]="['/', 'home']">
       <mat-icon>arrow_back</mat-icon>
-      <img
-        src="https://staticg.sportskeeda.com/editor/2022/08/53e15-16596004347246.png"
-        alt="Naruto"
-        class="chat-img"
-      />
+      <img [src]="chat.profilePic" alt="Naruto" class="chat-img" />
     </div>
     <div class="chat-info">
-      <div class="title">Naruto Uzumaki</div>
+      <div class="title">{{ chat.name }}</div>
       <div class="status">Online</div>
     </div>
     <div class="chat-actions">
@@ -20,11 +16,8 @@
   </div>
   <div class="main">
     <div class="chats">
-      <div class="chat left">
-        <div>Hi, Nice to see you here this is amazing right!</div>
-      </div>
-      <div class="chat left">
-        <div>Yo bro</div>
+      <div *ngFor="let m of msgs" class="chat left">
+        <div>{{ m }}</div>
       </div>
       <div class="chat right">
         <div>Hi, Nice to see you here this is amazing right!</div>

@@ -85,6 +85,9 @@ export class ChatsService {
   }
 
   getChat(id: number) {
+    this.chats.find((val) => {
+      return val.id === id;
+    });
     return of(this.chats.find((val) => val.id === id));
   }
 }
