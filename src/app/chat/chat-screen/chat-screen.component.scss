@@ -81,3 +81,29 @@
   display: grid;
   place-items: center;
 }
+
+// CHAT
+
+.chat {
+  padding: 12px 12px 0 12px;
+  display: flex;
+}
+.chat.right {
+  justify-content: flex-end;
+}
+.chat.left > div {
+  padding: 5px 15px;
+  border-radius: 15px;
+  background-color: orange;
+  width: fit-content;
+  max-width: 60%;
+}
+
+.chat.right > div {
+  padding: 5px 15px;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  width: fit-content;
+  max-width: 60%;
+}
