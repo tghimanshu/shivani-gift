@@ -46,10 +46,7 @@ export class ChatsService {
       profilePic: 'https://www.prensario.net/Multimedios/imgs/38683_750.jp',
       name: 'Day Dreams',
       msg: 'Yo, How are you kid....',
-      msgs: [
-        'what do we have here?',
-        'which drink naruto(real life one) likes the most?',
-      ],
+      msgs: ['what do we have here?', 'Tell me more about you...'],
       answer: 'sprite',
     },
     {
