@@ -14,10 +14,10 @@ export class ChatScreenComponent {
     profilePic: string;
     name: string;
     msg: string;
-    msgs: string[];
+    msgs: { side: string; message: string }[];
     answer: string;
   };
-  msgs: string[] = [];
+  msgs: { side: string; message: string }[] = [];
 
   constructor(
     private chatsService: ChatsService,

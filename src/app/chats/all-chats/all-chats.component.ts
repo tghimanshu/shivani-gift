@@ -27,7 +27,7 @@ export class AllChatsComponent {
     profilePic: string;
     name: string;
     msg: string;
-    msgs: string[];
+    msgs: { side: string; message: string }[];
     answer: string;
   }[];
   // chats = [

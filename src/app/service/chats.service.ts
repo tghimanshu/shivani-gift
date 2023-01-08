@@ -10,7 +10,7 @@ export class ChatsService {
     profilePic: string;
     name: string;
     msg: string;
-    msgs: string[];
+    msgs: { side: string; message: string }[];
     answer: string;
   }[] = [
     {
@@ -20,12 +20,16 @@ export class ChatsService {
       name: 'Naruto Uzumaki',
       msg: 'I was waiting for you for so long... wish you were Hinata tho😂...',
       msgs: [
-        'Hi...',
-        'I see you are here',
-        'WELCOME TO TEMARI CHAT!',
-        'this is created for sweet shivani.',
-        'So, You might have seen a lot of chats here, visit them and collect all the missing pieces of the word',
-        'then come here and get your reward!',
+        { side: 'left', message: 'Hi...' },
+        { side: 'left', message: 'I see you are here' },
+        { side: 'left', message: 'WELCOME TO TEMARI CHAT!' },
+        { side: 'left', message: 'this is created for sweet shivani.' },
+        {
+          side: 'left',
+          message:
+            'So, You might have seen a lot of chats here, visit them and collect all the missing pieces of the word',
+        },
+        { side: 'left', message: 'then come here and get your reward!' },
       ],
       answer: 'naruto',
     },
@@ -36,8 +40,14 @@ export class ChatsService {
       name: 'Cold Cocoa',
       msg: 'Want to have me, Dear??',
       msgs: [
-        'what do we have here?',
-        'which drink naruto(real life one) likes the most?',
+        {
+          side: 'left',
+          message: 'what do we have here?',
+        },
+        {
+          side: 'left',
+          message: 'which drink naruto(real life one) likes the most?',
+        },
       ],
       answer: 'sprite',
     },
@@ -46,7 +56,16 @@ export class ChatsService {
       profilePic: 'https://www.prensario.net/Multimedios/imgs/38683_750.jp',
       name: 'Day Dreams',
       msg: 'Yo, How are you kid....',
-      msgs: ['what do we have here?', 'Tell me more about you...'],
+      msgs: [
+        {
+          side: 'left',
+          message: 'what do we have here?',
+        },
+        {
+          side: 'left',
+          message: 'Tell me more about you...',
+        },
+      ],
       answer: 'sprite',
     },
     {
@@ -56,8 +75,14 @@ export class ChatsService {
       name: 'Taare Zameen Par',
       msg: 'Bum Bum Bole, Masti mai dole....',
       msgs: [
-        'what do we have here?',
-        'which drink naruto(real life one) likes the most?',
+        {
+          side: 'left',
+          message: 'what do we have here?',
+        },
+        {
+          side: 'left',
+          message: 'which drink naruto(real life one) likes the most?',
+        },
       ],
       answer: 'sprite',
     },
@@ -68,8 +93,14 @@ export class ChatsService {
       name: "Mister Wolf's Miss Rabbit",
       msg: 'Miss Rabbit has forced to marry above herself to save her brother',
       msgs: [
-        'what do we have here?',
-        'which drink naruto(real life one) likes the most?',
+        {
+          side: 'left',
+          message: 'what do we have here?',
+        },
+        {
+          side: 'left',
+          message: 'which drink naruto(real life one) likes the most?',
+        },
       ],
       answer: 'sprite',
     },
