@@ -12,13 +12,21 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { AllChatsComponent } from './chats/all-chats/all-chats.component';
 import { ChatScreenComponent } from './chat/chat-screen/chat-screen.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, StartPageComponent, HomeComponent, AllChatsComponent, ChatScreenComponent],
+  declarations: [
+    AppComponent,
+    StartPageComponent,
+    HomeComponent,
+    AllChatsComponent,
+    ChatScreenComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
 
     // angular material
     MatTabsModule,

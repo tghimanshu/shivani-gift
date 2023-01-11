@@ -53,17 +53,21 @@
 }
 
 .text-input {
-  padding: 15px;
+  padding: 10px;
   display: grid;
-  grid-template-columns: auto 1fr auto auto auto;
+  grid-template-columns: auto 1fr;
   gap: 5px;
+  background-color: black;
+  border-radius: 25px;
 }
 
 .input-container {
-  display: flex;
-  // grid-template-columns: 1fr auto;
+  // display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
   align-items: center;
-  gap: 15px;
+  gap: 5px;
+  padding: 10px;
 }
 
 .text-message {

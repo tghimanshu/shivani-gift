@@ -12,6 +12,7 @@ export class ChatsService {
     msg: string;
     msgs: { side: string; message: string }[];
     answer: string;
+    loaded: boolean;
   }[] = [
     {
       id: 1,
@@ -32,6 +33,7 @@ export class ChatsService {
         { side: 'left', message: 'then come here and get your reward!' },
       ],
       answer: 'naruto',
+      loaded: false,
     },
     {
       id: 2,
@@ -50,6 +52,7 @@ export class ChatsService {
         },
       ],
       answer: 'sprite',
+      loaded: false,
     },
     {
       id: 3,
@@ -67,6 +70,7 @@ export class ChatsService {
         },
       ],
       answer: 'sprite',
+      loaded: false,
     },
     {
       id: 4,
@@ -85,6 +89,7 @@ export class ChatsService {
         },
       ],
       answer: 'sprite',
+      loaded: false,
     },
     {
       id: 5,
@@ -103,6 +108,7 @@ export class ChatsService {
         },
       ],
       answer: 'sprite',
+      loaded: false,
     },
   ];
 

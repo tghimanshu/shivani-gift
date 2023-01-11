@@ -16,8 +16,10 @@ export class ChatScreenComponent {
     msg: string;
     msgs: { side: string; message: string }[];
     answer: string;
+    loaded: boolean;
   };
   msgs: { side: string; message: string }[] = [];
+  myMessage: string = '';
 
   constructor(
     private chatsService: ChatsService,
@@ -50,5 +52,14 @@ export class ChatScreenComponent {
           }
         });
     });
+  }
+
+  send_message() {
+    console.log(this.myMessage);
+    this.msgs.push({
+      side: 'right',
+      message: this.myMessage,
+    });
+    this.myMessage = '';
   }
 }
