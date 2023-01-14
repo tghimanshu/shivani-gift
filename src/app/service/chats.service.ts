@@ -33,6 +33,7 @@ export class ChatsService {
         { side: 'left', message: 'then come here and get your reward!' },
       ],
       answer: 'naruto',
+      // wrongAnswers: ["Oops! Wrong Answer."],
       loaded: false,
     },
     {
@@ -123,5 +124,16 @@ export class ChatsService {
       return val.id === id;
     });
     return of(this.chats.find((val) => val.id === id));
+  }
+
+  updateMessages(id: number, msgs: { side: string; message: string }[]) {
+    let index = this.chats.findIndex((val) => val.id === id);
+    console.log(index);
+    this.chats[index].msgs = msgs;
+  }
+
+  updateLoaded(id: number) {
+    let index = this.chats.findIndex((val) => val.id === id);
+    this.chats[index].loaded = true;
   }
 }

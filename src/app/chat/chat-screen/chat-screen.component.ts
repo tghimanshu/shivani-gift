@@ -41,25 +41,36 @@ export class ChatScreenComponent {
         .subscribe((val2) => {
           if (val2) {
             this.chat = val2;
-            let i = 0;
-            let interval = setInterval(() => {
-              this.msgs.push(this.chat.msgs[i]);
-              i++;
-              if (i === val2.msgs.length) {
-                clearInterval(interval);
-              }
-            }, Math.random() * 3000 + 50);
+            if (val2.loaded) {
+              this.msgs = this.chat.msgs;
+            } else {
+              let i = 0;
+              let interval = setInterval(() => {
+                this.msgs.push(this.chat.msgs[i]);
+                i++;
+                if (i === val2.msgs.length) {
+                  this.chatsService.updateLoaded(val2.id);
+                  clearInterval(interval);
+                }
+              }, Math.random() * 3000 + 50);
+            }
           }
         });
     });
   }
 
   send_message() {
-    console.log(this.myMessage);
     this.msgs.push({
       side: 'right',
       message: this.myMessage,
     });
+    if (this.myMessage === this.chat.answer) {
+      this.msgs.push({
+        side: 'left',
+        message: 'hell yeah',
+      });
+    }
+    this.chatsService.updateMessages(this.chat.id, this.msgs);
     this.myMessage = '';
   }
 }
