@@ -19,11 +19,11 @@ export class ChatsService {
       profilePic:
         'https://staticg.sportskeeda.com/editor/2022/08/53e15-16596004347246.png',
       name: 'Naruto Uzumaki',
-      msg: 'I was waiting for you for so long... wish you were Hinata tho😂...',
+      msg: 'I was waiting for you for so long... ',
       msgs: [
         { side: 'left', message: 'Hi...' },
         { side: 'left', message: 'I see you are here' },
-        { side: 'left', message: 'WELCOME TO TEMARI CHAT!' },
+        { side: 'left', message: 'WELCOME TO THE CHAT, TEMARI!' },
         { side: 'left', message: 'this is created for sweet shivani.' },
         {
           side: 'left',
@@ -69,8 +69,12 @@ export class ChatsService {
           side: 'left',
           message: 'Tell me more about you...',
         },
+        {
+          side: 'left',
+          message: 'Which Phone do you use right now? (Brand Name)',
+        },
       ],
-      answer: 'sprite',
+      answer: 'vivo',
       loaded: false,
     },
     {
